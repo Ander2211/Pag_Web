@@ -1,0 +1,38 @@
+section{
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+body{
+    background-color: black;
+    
+
+}
+
+.l{
+    margin: 4%;
+    width: 600px;
+    height: 400px;
+    background: linear-gradient(to right, #00ff5b, #0014ff);
+}
+
+.r{
+    margin: 3%;
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(circle, #ff2cdf, #0014ff);
+}
+
+.g{
+    margin: 3%;
+    width: 600px;
+    height: 400px;
+    background: conic-gradient(from 43deg, #00e5ff, #1200ff);
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

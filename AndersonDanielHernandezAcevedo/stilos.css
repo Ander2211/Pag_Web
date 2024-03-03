@@ -1,0 +1,27 @@
+.css{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    color: #00ffff;
+   
+    text-shadow: #0ee2f6 0 0 10px;
+
+
+}
+
+.info{
+padding: 70px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: rgb(177, 177, 251);
+}
+
+
+body{
+    background-color: rgb(40, 40, 40);
+   
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+       
+       
+}
+

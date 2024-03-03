@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <!-- Iconos Fotawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate CSS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/nosotros.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="Principal.html"><img src="img/Logo.jpg" alt="Logo de la empresa"></a>
+            <div class="icono-menu" id="menu-mobile">
+                <i class="fa-solid fa-bars" id="icono-hamburguesa"></i>
+            </div>
+        </div>
+        <div class="container-nav" id="menu-movimiento">
+            <nav class="menu-nav">
+                <ul class="menu">
+                    <li><a href="Principal.html">Inicio</a></li>
+                    <li class="borde"><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Sevicios.html">Servicios</a></li>
+                    <li><a href="Contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                
+                <nav class="menu-social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter "></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="background-section-1"> 
+        <p class="promo">
+
+            
+            
+            <b>Sobre Nosotros</b> <br>
+            <br>
+            En Sofá Home, somos apasionados por la comodidad y el diseño elegante. Desde nuestros inicios, nos hemos dedicado a ofrecer a nuestros clientes una amplia gama de sofás de alta calidad que no solo embellecen los espacios, sino que también brindan una experiencia de confort inigualable.
+            <br>
+            Nuestra historia se remonta a 1932, cuando un equipo de entusiastas del diseño de interiores decidió revolucionar la forma en que las personas experimentan el descanso en sus hogares. Con un compromiso inquebrantable con la artesanía experta y los materiales de primera calidad, hemos crecido hasta convertirnos en un referente en la industria del mobiliario. <br>
+            <br>
+            Lo que nos distingue es nuestra atención meticulosa a cada detalle. Desde la selección de los materiales hasta el proceso de fabricación, cada etapa es supervisada por nuestro equipo de expertos para garantizar que cada sofá que sale de nuestras instalaciones cumpla con los más altos estándares de calidad y durabilidad. <br>
+            <br>
+            En Sofá Home, no solo vendemos sofás; creamos espacios de confort y estilo que se adaptan a las necesidades y gustos individuales de nuestros clientes. Ya sea que estés buscando un sofá clásico y elegante para tu sala de estar o una opción moderna y funcional para tu estudio, estamos aquí para ayudarte a encontrar la pieza perfecta que transformará tu hogar. <br>
+            <br>
+            Nubrestra misión es simple: ofrecer sofás excepcionales que mejoren la vida diaria de nuestros clientes y les permitan disfrutar al máximo de sus momentos de descanso y convivencia en casa. Nos enorgullece haber sido parte de innumerables hogares felices y esperamos poder ser parte del tuyo también. <br>
+            <br>
+            ¡Bienvenido a Sofá Home! Donde la comodidad se encuentra con el estilo. <br>
+            <br>
+            </p>
+    </section>
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    <footer>
+        <div class="info">
+                <h4>San Salvador, Soyapango</h4>
+                <h4>Tel: 2284-2234</h4>
+                <h5>Anderson Daniel, 2024</h5>
+        </div>
+
+
+        <div class="footer-content">
+            <nav>
+                <ul class="pie">
+                    <li class="red"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="red"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="red"><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menu = document.getElementById('menu-mobile');
+        const movimiento = document.getElementById('menu-movimiento');
+        const icono = document.getElementById('icono-hamburguesa');
+        
+        menu.addEventListener('click', function(){
+            if(movimiento.className === 'container-nav'){
+                movimiento.className += ' container-nav-2';
+                icono.className += ' fa-x';
+            } else {
+                movimiento.className = 'container-nav';
+                icono.className = ' fa-solid fa-bars';
+            }
+        });
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

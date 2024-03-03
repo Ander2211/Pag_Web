@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Estilos con CSS</title>
+
+<body>
+   
+
+    <HEAD><TITLE>Estilos con CSS</TITLE>
+    
+    
+    
+    <style type="text/css">
+    ParentDiv01 .ChildDivOrig {display: block;} 
+    .ParentDiv01 .ChildDivNew {display: none;}
+    .ParentDiv02 .ChildDivOrig {display: none;}
+    .ParentDiv02 .ChildDivNew {display: block;}
+    </style>
+    
+    </head>
+    
+    <body>
+    
+    <center>
+    <h1>
+    indice
+    </h1>
+    </center>
+    <hr>
+    
+    <h2>Escribiendo hojas de estilo</h2>
+    
+    <h3>Elementos modificables con CSS</h3>
+    
+    O mejor dicho, atributos de elementos que pueden modificarse con CSS. Son muchos (casi todos) los aspectos que pueden modificarse con CSS. Dado el car&aacute;cter general de esta gu&iacute;a, aqu&iacute; veremos solamente los m&aacute;s utilizados.
+    <p>
+    Generalmente se act&uacute;a sobre los siguientes:
+    
+  
+    
+    Y puede que te preguntes qu&eacute; es un bloque. Como <b>bloque</b> puede entenderse todo lo comprendido dentro de elementos con cierre, como  &lt;body&gt; &lt;/body&gt;, &lt;p&gt; &lt;/p&gt;,  &lt;form&gt; &nbsp; &lt;/form&gt;, &lt;table&gt; &lt;/table&gt;, &lt;td&gt; &lt;/td&gt;, &lt;div&gt; &lt;/div&gt;, etc.,  y al aplicar estilos con CSS no es buena idea escribir nada fuera de estos  elementos. En lugar de ser un nombre de elemento HTML, un bloque tambi&eacute;n puede tener un nombre definido por el programador, por ejemplo "menu", y generalmente son &eacute;stos los que contienen en su interior a los anteriores o a otros bloques definidos por el usuario. El n&uacute;mero de bloques en una p&aacute;gina puede ser muy elevado (m&aacute;s de mil), y depender&aacute; de la capacidad del navegador utilizado.
+    <p>
+    Veamos c&oacute;mo funciona cada cosa:
+    <p>
+    Los <b>M&aacute;rgenes de bloque</b> son el espacio comprendido entre el bloque y el borde de la ventana activa del navegador.  Se controla con el atributo <font color="blue"><b>margin</b></font>.
+    <p>
+    Los <b>Bordes de bloque</b>, sin aplicar estilos, no son visibles, y es como un cuadro imaginario que envuelve todo el contenido del bloque.  Su atributo de control es <font color="blue"><b>border</b></font>.
+    <p>
+    <b>Espaciado interno del bloque</b> es la distancia entre el borde del bloque y su contenido. Es el atributo <font color="blue"><b>padding</b></font> (en ingl&eacute;s significa algo as&iacute; como "acolchado")
+    <p>
+    El <b>Estilo y color de los bordes</b>, son evidentes: son las l&iacute;neas que delimitan el bloque, que pueden dibujarse de varias formas en cuanto a tipo de trazo, grosor y color. Estos dos atributos tambi&eacute;n pueden actuar sobre los bordes de otros elementos contenidos dentro de un bloque, como formularios, tablas, gr&aacute;ficos, etc.
+    <p>
+    El <b>Color del fondo</b> se controla con las mismas instrucciones que las de la p&aacute;gina HTML: <font color="blue"><b>background</b></font>. Los par&aacute;metros de color, al igual que en HTML, se pueden escribir con su nombre (en ingl&eacute;s) o con la notaci&oacute;n RGB en hexadecimal.
+    <p>
+    El <b>Tama&ntilde;o</b>  son las dimensiones del bloque. Si no se indican dimensiones, por defecto, el bloque ocupar&aacute; todo el ancho de la ventana, y de alto lo que su contenido precise. Se utilizan dos atributos para controlarlo: <font color="blue"><b>width</b></font> para el ancho y <font color="blue"><b>height</b></font> para el alto.
+    <hr>
+    
+    <h3>Estilo del texto</h3>
+    
+    Veamos los par&aacute;metros disponibles para dar estilo al texto. Como ya sabes, las unidades de medida aplicables a todos ellos son varias, pero para mayor claridad, en todos los ejemplos utilizaremos solamente el p&iacute;xel: <b>px</b>.  Sea por ejemplo la siguiente p&aacute;gina:
+    
+    <pre>
+    <font size=3 color="blue" face="courier">
+    &lt;HTML&gt;
+    &lt;HEAD&gt;&lt;TITLE&gt;Estilos&lt;/TITLE&gt;
+    &lt;LINK REL="stylesheet" TYPE="text/css" HREF="<b>estilo.css</b>"&gt;
+    &lt;/HEAD&gt;
+    &lt;BODY&gt;
+    
+    Texto fuera de párrafo.&lt;BR&gt;
+    Segunda línea fuera de párrafo.
+    
+    &lt;P&gt;texto de párrafo. &lt;BR&gt; segunda línea de párrafo.&lt;/P&gt;
+    
+    &lt;/BODY&gt;
+    &lt;/HTML&gt;
+    </font>
+    </PRE>
+    
+    Y si escribimos la siguiente hoja de estilo <font color="blue"><b>estilo.css</b></font>:
+    <p>
+    <font face="courier" color="blue">
+    <pre>
+    BODY {color:green }
+    
+    P {color:red; 
+       font-size:20px;
+       font-family:Courier;
+       font-weight:bold;
+       font-style:italic;
+       line-height:30px;
+       letter-spacing:5px;
+       text-decoration:underline;
+       text-transform:capitalize;
+       text-align:left;
+       text-indent:30px;
+      }</font>
+    </pre>
+    Se obtiene:
+    <p>
+    <font color="green">
+    Texto fuera de párrafo.<br>
+    Segunda línea fuera de párrafo.</font>
+    
+    <p style="color:red; 
+       font-size:20px;
+       font-family:Courier;
+       font-weight:bold;
+       font-style:italic;
+       line-height:30px;
+       letter-spacing:5px;
+       text-decoration:underline;
+       text-transform:capitalize;
+       text-align:left;
+       text-indent:30px;">texto de párrafo. <BR> segunda línea de párrafo</p>
+    
+    F&iacute;jate en la gran diferencia de estilo que hay entre las dos primeras l&iacute;neas y las dos siguientes. Analicemos c&oacute;mo funciona: Las dos primeras l&iacute;neas de texto, en color verde, tienen todos sus valores por defecto, excepto el color que lo reciben de la etiqueta <font color="blue"><b>BODY</b></font> definida en la css. Las dos siguientes, en rojo, reciben todas sus caracter&iacute;sticas de la etiqueta <font color="blue"><b>P</b></font>, tambi&eacute;n definida en la css. Como puedes ver, hay una gran cantidad de atributos que act&uacute;an sobre el estilo de ese texto.
+    <p>
+    <font color="red"><b>color:</b></font><font color="blue">red;</font> &nbsp;&nbsp; Este ya lo conocemos. Define el color del texto. El color deseado puede escribirse directamente, en ingl&eacute;s, o puede utilizarse el sistema RGB en hexadecimal. Por ejemplo, este mismo color rojo en RGB ser&iacute;a:  #FF0000; &nbsp;&nbsp;&nbsp; Ciertos valores, como el rojo,  pueden escribirse de forma abreviada: #F00; &nbsp;&nbsp;&nbsp;  Otra forma de declarar el color es mediante la funci&oacute;n <font color="red">rgb()</font> que puede parametrizarse en decimal o en tantos por ciento. He aqu&iacute; un ejemplo con las cuatro formas del color rojo:
+    <font color="red">
+    <pre>
+    color: #ff0000 
+    color: #f00 
+    color: rgb(255,0,0) 
+    color: rgb(100%, 0%, 0%) 
+    </pre></font>
+     <p>
+    Recuerda que en el &iacute;ndice tienes unas tablas con los nombres y c&oacute;digos de los colores.
+    <p>
+    <font color="red"><b>font-size:</b></font><font color="blue">20px;</font> &nbsp;&nbsp; Tambi&eacute;n muy conocido: define el tama&ntilde;o de los caracteres. Adem&aacute;s del tama&ntilde;o definido por el usuario, expresado en cualquiera de las unidades de medida conocidas,  puede tener alguno de los siguientes valores absolutos: <font color="blue"> <b>xx-large &nbsp; x-large &nbsp; large &nbsp; medium &nbsp; small &nbsp; x-small &nbsp; xx-small</b></font>.
+    <p>
+    <font color="red"><b>font-family:</b></font><font color="blue">Courier;</font> &nbsp;&nbsp; Indica el nombre (o nombres) del  tipo de letra que se va a emplear. En el ejemplo se ha utilizado el tipo "Courier", pero pueden escribirse varios separados por comas, lo que indica al navegador que si no existe en la m&aacute;quina el primer tipo, utilice el segundo, y si tampoco, el tercero, etc. Por ejemplo: <b>font-family:</b>Courier,Verdana,Arial; &nbsp;&nbsp; <br>
+    Cuando definas tipos de letra, recuerda que muchos programas y algunos drivers de impresora instalan sus propias fuentes en el sistema sin avisarte, y puede que en tu m&aacute;quina haya tipos que no son est&aacute;ndar en Windows. No se deben utilizar tipos extra&ntilde;os que dif&iacute;cilmente se encontrar&aacute;n en las m&aacute;quinas de los clientes, es decir, el tipo de fuente indicado en la hoja simplemente le indica al navegador qu&eacute; fuente debe usar, NO se la sirve.  En la versi&oacute;n 3 de CSS parece que se podr&aacute; indicar al cliente d&oacute;nde obtener una fuente que no tenga instalada.
+    <p>
+    <font color="red"><b>font-weight:</b></font><font color="blue">bold;</font> &nbsp;&nbsp; Aqu&iacute; se especifica el peso o grosor de la fuente. Pueden emplearse literales como <font color="blue"><b>lighter</b></font>, <font color="blue"><b>normal</b></font> (por defecto) o <font color="blue"><b>bold</b></font>. Tambi&eacute;n se pueden utilizar n&uacute;meros entre <font color="blue"><b>100</b></font> y <font color="blue"><b>900</b></font>, escritos de 100 en 100 (no sirve 190, pero s&iacute; 200). Los pesos no tienen los mismos resultados en todas las m&aacute;quinas, ya que depende mucho de la calidad de su pantalla, de su resoluci&oacute;n, del navegador que emplea... En cualquier caso, no deben hacerse combinaciones extra&ntilde;as, como definir un size muy peque&ntilde;o y darle peso 900, ya que lo &uacute;nico que conseguir&aacute;s es un borr&oacute;n perfectamente ilegible.
+    <p>
+    <font color="red"><b>font-style:</b></font><font color="blue">italic;</font> &nbsp;&nbsp; Solamente tiene dos posibilidades: <font color="blue"><b>normal</b></font> (por defecto) o <font color="blue"><b>italic</b></font> que es el empleado en el ejemplo que estamos analizando, y que hace que el texto tenga cierta inclinaci&oacute;n.
+    <p>
+    <font color="red"><b>line-height:</b></font><font color="blue">30px;</font> &nbsp;&nbsp; Sirve para establecer la distancia entre l&iacute;neas consecutivas de un mismo p&aacute;rrafo. Adem&aacute;s de en p&iacute;xels o alguna de las unidades de medida que ya conocemos, puede indicarse con un simple n&uacute;mero que viene a indicar, aproximadamente, cuantas anchuras de l&iacute;nea se tomar&aacute;n como unidad de medida para separar una l&iacute;nea de otra. As&iacute;, por ejemplo, si pones <b>0</b> la segunda l&iacute;nea se suporpone a la primera.
+    <p>
+    <font color="red"><b>letter-spacing:</b></font><font color="blue">5px;</font> &nbsp;&nbsp; Establece la separaci&oacute;n entre los caracteres de la l&iacute;nea.
+    <p>
+    <font color="red"><b>word-spacing:</b></font><font color="blue">5px;</font> &nbsp;&nbsp; Establece la separaci&oacute;n entre las palabras de la l&iacute;nea.
+    <p>
+    
+    <font color="red"><b>text-decoration:</b></font><font color="blue">underline;</font> &nbsp;&nbsp; Con este par&aacute;metro, que no influye en el tama&ntilde;o, puedes acompa&ntilde;ar al texto de una delgada l&iacute;nea decorativa que puede estar en tres posiciones distintas, como <font color="blue"><b>underline</b></font> (el t&iacute;pico subrayado debajo de la l&iacute;nea),  <font color="blue"><b>through</b></font> (en el centro de la l&iacute;nea -tachado-) o <font color="blue"><b>overline</b></font> (encima del texto). Para que no aparezca se utiliza <font color="blue"><b>none</b></font> (por defecto). El valor none se puede utilizar para eliminar el efecto de subrayado que ponen otros elementos, como ocurre en los links.
+    <p>
+    <font color="red"><b>text-transform:</b></font><font color="blue">capitalize;</font> &nbsp;&nbsp; Curioso efecto que provee de cuatro posibilidades: <font color="blue"><b>capitalize</b></font> que convierte en may&uacute;scula la primera letra de cada palabra del texto, como puedes ver en el ejemplo, donde el texto original no es as&iacute;. <font color="blue"><b>uppercase</b></font> para convertir todas las letras a may&uacute;sculas y <font color="blue"><b>lowercase</b></font> para lo contrario, es decir, convertir todas las letras a min&uacute;sculas. El valor por defecto es <font color="blue"><b>none</b></font>, que como ya habrás supuesto, deja el texto tal como est&aacute; escrito.
+    <p>
+    <font color="red"><b>text-align:</b></font><font color="blue">left;</font> &nbsp;&nbsp; Alinea el texto seg&uacute;n convenga. Con <font color="blue"><b>left</b></font> a la izquierda (por defecto), <font color="blue"><B>right</b></font> a la derecha, <font color="blue"><b>center</b></font> centrado, y <font color="blue"><b>justify</b></font> justificado, es decir, igualando todas las l&iacute;neas en longitud a izquierda o derecha.
+    <p>
+    <font color="red"><b>text-indent:</b></font><font color="blue">30px</font> &nbsp;&nbsp; Produce que la primera l&iacute;nea del p&aacute;rrafo se escriba adentrada (indentada) un cierto espacio hacia la derecha o hacia la izquierda, dependiendo de la alineaci&oacute;n activa.
+    <p>
+    Este ser&iacute;a un resumen sobre la declaraci&oacute;n <b>font</b>:
+    <center>
+    <TABLE BORDER=1 CELLSPACING=2 CELLPADDING=2>
+     <TR>
+      <TH>Declaraci&oacute;n</TH>
+      <td>font-size</td>
+      <TD>font-family</TD>
+      <TD>font-weight</TD>
+      <TD>font-style</TD>
+     </TR>
+     <TR>
+      <TH>Valor por defecto</TH>
+      <TD>medium</TD>
+      <TD>Definido por el usuario</TD>
+      <TD>normal</TD>
+      <TD>normal</TD>
+     </TR>
+     <TR>
+      <TH>Valores posibles</TH>
+      <TD>Absoluto, relativo, porcentaje,<br> unidad de tama&ntilde;o</TD>
+      <TD>Familia de fuente Windows</TD>
+      <TD>normal, lighter, bolder, <br> un valor entre 100 y 900</TD>
+      <TD>normal, bold, italic</TD>
+     </TR>
+    <TR>
+      <TH>Valor porcentual</TH>
+      <TD>Se calcula respecto al padre</TD>
+      <TD>No aplicable</TD>
+      <TD>No aplicable</TD>
+      <TD>No aplicable</TD>
+     </TR>
+     <TR>
+      <TH>Se aplica a</TH>
+      <TD>Todos</TD>
+      <TD>Todos</TD>
+      <TD>Todos</TD>
+      <TD>Todos</TD>
+     </TR>
+     <TR>
+      <TH>Se hereda?</TH>
+      <TD>S&iacute;</TD>
+      <TD>S&iacute;</TD>
+      <TD>S&iacute;</TD>
+      <TD>S&iacute;</TD>
+     </TR>
+    </TABLE>
+    </center>
+    <p>
+    Y este sobre el resto:
+    <center>
+    <TABLE BORDER='1' CELLSPACING=2 CELLPADDING='2'>
+     <TR>
+      <TH>Declaraci&oacute;n</TH>
+      <td>line-height</td>
+      <TD>text-decoration</TD>
+      <TD>text-transform</TD>
+      <TD>text-align</TD>
+      <TD>text-indent</TD>
+      <TD>word-spacing</TD>
+      <TD>letter-spacing</TD>
+      <TD>white-space</TD>
+     </TR>
+     <TR>
+      <TH>Valor por defecto</TH>
+      <TD>normal</TD>
+      <TD>none</TD>
+      <TD>none</TD>
+      <TD>left</TD>
+      <TD>0</TD>
+      <TD>normal</TD>
+      <TD>normal</TD>
+      <TD>normal</TD>
+     </TR>
+     <TR>
+      <TH>Valores posibles</TH>
+      <TD>número, longitud, porcentaje, normal</TD>
+      <TD>none, underline, line-through, blink</TD>
+      <TD>capitalize, uppercase, lowercase, none, inherit</TD>
+      <TD>left, right, center, justify, none</TD>
+      <TD>longitud, porcentaje</TD>
+      <TD>normal, inherit, medida</TD>
+      <TD>normal, inherit, medida</TD>
+      <TD>normal, pre, nowrap, pre-wrap, pre-line, inherit</TD>
+     </TR>
+      <TR>
+      <TH>Valor porcentual</TH>
+      <TD>Se calcula respecto al tama&ntilde;o de la fuente</TD>
+      <TD>No aplicable</TD>
+      <TD>No aplicable</TD>
+      <TD>No aplicable</TD>
+      <TD>Se calcula respecto al ancho del elemento padre</TD>
+      <TD>No aplicable</TD>
+      <TD>No aplicable</TD>
+      <TD>No aplicable</TD>
+     </TR>
+     <TR>
+      <TH>Se aplica a</TH>
+      <TD>Elementos a nivel de bloque</TD>
+      <TD>Todos</TD>
+      <TD>Todos</TD>
+      <TD>Elementos a nivel de bloque</TD>
+      <TD>Elementos a nivel de bloque</TD>
+      <TD>Todos</TD>
+      <TD>Todos</TD>
+      <TD>Todos</TD>
+     </TR>
+     <TR>
+      <TH>Se hereda?</TH>
+      <TD>S&iacute;</TD>
+      <TD>No</TD>
+      <TD>S&iacute;</TD>
+      <TD>S&iacute;</TD>
+      <TD>S&iacute;</TD>
+      <TD>S&iacute;</TD>
+      <TD>S&iacute;</TD>
+      <TD>S&iacute;</TD>
+     </TR>
+    </TABLE>
+    </center>
+    
+    
+    
+    
+    
+    </BODY>
+    </HTML>

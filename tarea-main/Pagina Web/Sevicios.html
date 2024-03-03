@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <!-- Iconos Fotawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate CSS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/servicios.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="Principal.html"><img src="img/Logo.jpg" alt="Logo de la empresa"></a>
+            <div class="icono-menu" id="menu-mobile">
+                <i class="fa-solid fa-bars" id="icono-hamburguesa"></i>
+            </div>
+        </div>
+        <div class="container-nav" id="menu-movimiento">
+            <nav class="menu-nav">
+                <ul class="menu">
+                    <li><a href="Principal.html">Inicio</a></li>
+                    <li ><a href="Nosotros.html">Nosotros</a></li>
+                    <li class="borde"><a href="Sevicios.html">Servicios</a></li>
+                    <li><a href="Contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                
+                <nav class="menu-social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter "></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="background-section-1"> 
+        <p class="promo">¡Bienvenido al paraíso del descanso! <b>En Sofá Home</b>, estamos emocionados de presentarte nuestra increíble promoción en sofás que no querrás perderte. ¿Estás buscando elevar el nivel de comodidad en tu hogar? ¡Entonces, estás en el lugar indicado! <br>
+
+            Promoción Exclusiva: <br>
+            <br>
+            <br>
+            Descuentos Irresistibles: Disfruta de descuentos especiales en una amplia selección de sofás de primera calidad. Desde elegantes diseños modernos hasta clásicos atemporales, tenemos el sofá perfecto para cada estilo y espacio. <br>
+            <br>
+            Variedad de Estilos y Colores: Explora nuestra colección de sofás en una variedad de estilos, tamaños y colores. Ya sea que busques un sofá espacioso para la sala de estar principal o un sofá compacto para una acogedora sala de estar, tenemos opciones que se adaptan a tus necesidades y gustos. <br>
+            <br>
+            Asesoramiento Personalizado: Nuestro equipo de expertos en diseño de interiores estará encantado de asistirte durante tu visita. Te ofrecerán asesoramiento personalizado para ayudarte a encontrar el sofá perfecto que se ajuste a tu estilo de vida, espacio y presupuesto. <br>
+            <br>
+            Calidad Garantizada: En <b>En Sofá Home</b>, nos comprometemos a ofrecer productos de la más alta calidad. Cada sofá en nuestra tienda ha sido cuidadosamente seleccionado por su durabilidad, confort y estilo excepcional. <br>
+            <br>
+            Visítanos Hoy: <br>
+            <br>
+            No pierdas la oportunidad de transformar tu hogar en un oasis de confort y estilo con nuestros magníficos sofás. ¡Te esperamos en nuestras instalaciones para que descubras la mejor experiencia en muebles de salón! <br></p>
+    
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="info">
+                <h4>San Salvador, Soyapango</h4>
+                <h4>Tel: 2284-2234</h4>
+                <h5>Anderson Daniel, 2024</h5>
+        </div>
+
+
+        <div class="footer-content">
+            <nav>
+                <ul class="pie">
+                    <li class="red"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="red"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="red"><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menu = document.getElementById('menu-mobile');
+        const movimiento = document.getElementById('menu-movimiento');
+        const icono = document.getElementById('icono-hamburguesa');
+        
+        menu.addEventListener('click', function(){
+            if(movimiento.className === 'container-nav'){
+                movimiento.className += ' container-nav-2';
+                icono.className += ' fa-x';
+            } else {
+                movimiento.className = 'container-nav';
+                icono.className = ' fa-solid fa-bars';
+            }
+        });
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

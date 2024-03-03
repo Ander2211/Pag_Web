@@ -1,0 +1,31 @@
+
+h2 {
+    color: green;
+}
+ul {
+    color: blue;
+}
+ol {
+    color: blue;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+section {
+    margin-top: 20px;
+}
+h1 {
+    color: #333;
+}
+p {
+    line-height: 1.5;
+    color: #555;
+}

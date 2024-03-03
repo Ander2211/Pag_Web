@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <!-- Iconos Fotawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate CSS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/contacto.css">
+
+    
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="Principal.html"><img src="img/Logo.jpg" alt="Logo de la empresa"></a>
+            <div class="icono-menu" id="menu-mobile">
+                <i class="fa-solid fa-bars" id="icono-hamburguesa"></i>
+            </div>
+        </div>
+        <div class="container-nav" id="menu-movimiento">
+            <nav class="menu-nav">
+                <ul class="menu">
+                    <li><a href="Principal.html">Inicio</a></li>
+                    <li ><a href="Nosotros.html">Nosotros</a></li>
+                    <li ><a href="Sevicios.html">Servicios</a></li>
+                    <li  class="borde"><a href="Contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                
+                <nav class="menu-social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter "></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="background-section-1"> 
+        <div class="mapa" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387051.7138323309!2d-74.25986436081865!3d40.697149399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1644525227044!5m2!1ses!2ses" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <p class="importante" >     <i class="fa-solid fa-location-dot"></i>       Estamos ubicados en la sexta calle poniente hacia no se...  <br><br>
+            <i class="fa-solid fa-phone"></i>   2239-3938<br><br>
+            <i class="fa-brands fa-whatsapp"></i> 7663-3221</p>
+    
+        </section>
+    
+    
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="info">
+                <h4>San Salvador, Soyapango</h4>
+                <h4>Tel: 2284-2234</h4>
+                <h5>Anderson Daniel, 2024</h5>
+        </div>
+
+
+        <div class="footer-content">
+            <nav>
+                <ul class="pie">
+                    <li class="red"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="red"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="red"><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menu = document.getElementById('menu-mobile');
+        const movimiento = document.getElementById('menu-movimiento');
+        const icono = document.getElementById('icono-hamburguesa');
+        
+        menu.addEventListener('click', function(){
+            if(movimiento.className === 'container-nav'){
+                movimiento.className += ' container-nav-2';
+                icono.className += ' fa-x';
+            } else {
+                movimiento.className = 'container-nav';
+                icono.className = ' fa-solid fa-bars';
+            }
+        });
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

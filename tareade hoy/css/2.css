@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif
+    ;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid #87CEEB;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #87CEEB;
+    color: white;
+}
+
+td {
+    background-color: #E0FFFF;
+}
+
+.s {
+    background-color: #98FB98;
+}
+
+.p {
+    background-color: #FFD700;
+}
+
+.leer {
+    background-color: #FFA07A;
+}
